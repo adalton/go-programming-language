@@ -3,10 +3,6 @@
 //
 // Modified by Andy Dalton to implement exercise solution.
 
-// See page 6.
-//!+
-
-// Echo2 prints its command-line arguments.
 package main
 
 import (
@@ -22,5 +18,3 @@ func main() {
 	}
 	fmt.Println(s)
 }
-
-//!-
