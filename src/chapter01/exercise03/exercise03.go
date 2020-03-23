@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-func echo2() {
+func Echo2() {
 	s, sep := "", ""
 	for _, arg := range os.Args[1:] {
 		s += sep + arg
@@ -20,6 +20,6 @@ func echo2() {
 	fmt.Println(s)
 }
 
-func echo3() {
+func Echo3() {
 	fmt.Println(strings.Join(os.Args[1:], " "))
 }
