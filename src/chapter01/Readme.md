@@ -89,6 +89,8 @@
 8. Modify `fetch` to add the prefix `http://` to each argument URL if it is
    missing.  You might want to use `strings.HasPrefix`.
 
+   [Solution](./exercise08/exercise08.go)
+
 9. Modify `fetch` to also print the HTTP status code, found in `resp.Status`.
 
 ## 1.6 - Fetching URLs Concurrently
