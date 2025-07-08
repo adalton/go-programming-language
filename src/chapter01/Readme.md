@@ -93,6 +93,8 @@
 
 9. Modify `fetch` to also print the HTTP status code, found in `resp.Status`.
 
+   [Solution](./exercise09/exercise09.go)
+
 ## 1.6 - Fetching URLs Concurrently
 
 10. Find a web site that produces a large amount of data. Investigate caching by
