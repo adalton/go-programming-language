@@ -84,6 +84,8 @@
    without requiring a buffer large enough to hold the entire stream. Be sure
    to check the error result of `io.Copy`.
 
+   [Solution](./exercise07/exercise07.go)
+
 8. Modify `fetch` to add the prefix `http://` to each argument URL if it is
    missing.  You might want to use `strings.HasPrefix`.
 
