@@ -127,8 +127,20 @@
 ## 1.7 - A Web Server
 
 12. Modify the Lissajous server to read parameter values from the URL. For
-    exam ple, you might arrange it so that a URL like
+    example, you might arrange it so that a URL like
     `http://localhost:8000/?cycles=20` sets the number of cycles to 20 instead
     of the default 5. Use the `strconv.Atoi` function to convert the string
     parameter into an integer. You can see its documentation with
     `go doc strconv.Atoi`.
+
+    ```
+    This version makes all of the previously constant values URL parameters,
+    for example:
+
+    http://localhost:8000/?size=300&res=0.002&cycles=10&nframes=16&delay=4
+
+    If there's a failure parsing the parameter, the default is used
+    automatically.
+    ```
+
+   [Solution](./exercise12/exercise12.go)
