@@ -101,11 +101,28 @@
     running `fetchall` twice in succession to see whether the reported time
     changes much. Do you get the same content each time? Modify `fetchall` to
     print its output to a file so it can be examined.
+
+    ```
+    With websites that cache generated pages, the second run of `fetchall`
+    results in faster response times.
+
+    The solution here updates `fetchall` to write the responses to files,
+    indexed by the initial start time and the site's offset into the
+    argument array.
+    ```
+
+   [Solution](./exercise10/exercise10.go)
     
 11. Try `fetchall` with longer argument lists, such as samples from the top
     million web sites available at `alexa.com`. How does the program behave if
     a web site just doesn't respond? (Section 8.9 describes mechanisms for
     coping in such cases.)
+
+    ```
+    If a web site doesn't respond (i.e., `fetchall` can establish a connection
+    to the server, but the server doesn't respond with data), then the goroutine
+    performing that operation will block indefinately, waiting for a response.
+    ```
 
 ## 1.7 - A Web Server
 
